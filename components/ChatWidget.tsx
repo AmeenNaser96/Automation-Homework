@@ -21,6 +21,7 @@ export default function ChatWidget() {
           footer: '',
           getStarted: 'محادثة جديدة',
           inputPlaceholder: 'اكتب سؤالك هنا...',
+          closeButtonTooltip: 'إغلاق',
         },
       },
     });
