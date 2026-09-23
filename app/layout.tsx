@@ -1,6 +1,7 @@
 import "./globals.css";
 import { IBM_Plex_Sans_Arabic, IBM_Plex_Mono } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import ChatWidget from "@/components/ChatWidget";
 
 const plexArabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ar" dir="rtl" className={`${plexArabic.variable} ${plexMono.variable}`}>
       <body className="font-sans bg-void text-ink min-h-screen">
         <NavBar />
+        <ChatWidget />
         <main className="max-w-6xl mx-auto px-6 py-8">{children}</main>
       </body>
     </html>
